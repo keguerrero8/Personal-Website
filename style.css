@@ -1,3 +1,31 @@
 body {
-    background: blue;
+    background: rgb(126, 146, 177);
   }
+
+#nav_bar {
+    list-style-type: none; /* this removes the bullets from list */ 
+    background: rgb(15, 15, 15);
+    margin: 0%;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav_item {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.nav_item a {
+    color: white;
+}
+
+.nav_item:hover {
+    background-color: rgba(37, 116, 112, 0.658);
+}
+
+h1 {
+    margin: 5%;
+}
