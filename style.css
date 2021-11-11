@@ -1,5 +1,6 @@
 body {
     background: rgb(126, 146, 177);
+    position: relative;
   }
 
 #nav_bar {
@@ -7,15 +8,15 @@ body {
     background: rgb(15, 15, 15);
     margin: 0%;
     padding: 0px;
-    position: fixed;
+    position: fixed; /*makes it so nav bar is still there when scrolling*/
     top: 0;
     width: 100%;
+    text-align: center;
 }
 
 .nav_item {
     display: inline-block;
     padding: 10px;
-    margin-left: 15%;
 }
 
 .nav_item a {
@@ -27,5 +28,62 @@ body {
 }
 
 h1 {
-    margin: 5%;
+    margin: 5%; /*this will leave 5% room for background from top and left*/
+    background: lightblue;
+    width: 90%;
+    padding: 2%;
+    text-align: center;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_text {
+    margin: 20px;
+    font-size: 120%;
+}
+
+#bigText1 {
+    margin: 10px;
+    background: lightblue;
+}
+
+#bigText2 {
+    margin: 10px;
+    background: lightblue;
+}
+
+.Footer {
+    margin: 0%;
+    padding: 0;
+    background: rgb(15, 15, 15);
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links ul{
+    display: flex;
+    margin: auto;
+}
+
+.social-items {
+    list-style-type: none;
+}
+
+.social-items a{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: lightblue;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+}
+
