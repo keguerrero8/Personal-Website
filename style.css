@@ -39,6 +39,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 .intro_text {
@@ -64,6 +65,7 @@ h1 {
 
 .social-links {
     display: flex;
+    padding-top: 2%;
 }
 
 .social-links ul{
@@ -85,5 +87,6 @@ h1 {
 .copyright p{
     color: white;
     text-align: center;
+    padding: 2%;
 }
 
