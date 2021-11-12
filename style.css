@@ -90,3 +90,24 @@ h1 {
     padding: 2%;
 }
 
+.buttonBox { /*this is for actual button element*/
+    background: rgba(1, 5, 58, 0.685);
+    color: white;
+    padding: 20px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.buttons { /*this is for the div element*/
+    text-align: center;
+    margin: 5%;
+}
+
+.downArrow {
+    text-align: center;
+}
+
+/*.popup { /*this is modal
+    position: fixed;
+} */
+
