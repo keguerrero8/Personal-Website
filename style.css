@@ -33,6 +33,7 @@ h1 {
     width: 90%;
     padding: 2%;
     text-align: center;
+    border-radius: 10px;
 }
 
 .container {
@@ -59,13 +60,13 @@ h1 {
 
 .Footer {
     margin: 0%;
-    padding: 0;
+    padding: auto;
     background: rgb(15, 15, 15);
 }
 
 .social-links {
     display: flex;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 .social-links ul{
@@ -87,7 +88,7 @@ h1 {
 .copyright p{
     color: white;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 .buttonBox { /*this is for actual button element*/
@@ -96,6 +97,7 @@ h1 {
     padding: 20px;
     border: solid black;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .buttons { /*this is for the div element*/
@@ -107,7 +109,52 @@ h1 {
     text-align: center;
 }
 
-/*.popup { /*this is modal
+#popup { /*this is modal*/
     position: fixed;
-} */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black;
+    border-radius: 10px;
+    z-index: 999;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    display: none;
+}
 
+.popupHeader {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.popupHeaderTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#closebutton {
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.popupBody {
+    padding: 20px 15px;
+}
+
+#overlay {
+    position: fixed;
+    /*opacity: 0%;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
