@@ -100,6 +100,10 @@ h1 {
     cursor: pointer;
 }
 
+.buttonBox:hover {
+    background-color: rgba(37, 116, 112, 0.658);
+}
+
 .buttons { /*this is for the div element*/
     text-align: center;
     margin: 5%;
