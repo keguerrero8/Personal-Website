@@ -1,22 +1,38 @@
 body {
-    background-image: linear-gradient(to right, blue,aqua);
-    position: relative;
+    background-color: rgb(122, 121, 121);
+    margin: 0%;
+    padding: 0%; 
   }
+
+header, footer{
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 99;
+}
+
+header {
+    height: 5vh;
+}
+
+footer {
+    height: 15vh;
+    bottom: 0;
+}
 
 #nav_bar {
     list-style-type: none; /* this removes the bullets from list */ 
-    background: rgb(15, 15, 15);
-    margin: 0%;
+    margin: 0;
     padding: 0px;
-    position: fixed; /*makes it so nav bar is still there when scrolling*/
-    top: 0;
+    position: fixed;
     width: 100%;
     text-align: center;
 }
 
 .nav_item {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
 }
 
 .nav_item a {
@@ -24,49 +40,92 @@ body {
 }
 
 .nav_item:hover {
-    background-color: rgba(37, 116, 112, 0.658);
+    background-color:rgb(7, 103, 134);
 }
 
-h1 {
-    margin: 5%; 
-    background: lightblue;
-    width: 90%;
-    padding: 1%;
+#text-container {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    line-height: 50px;
+    width: 550px;
+    z-index: 10;
+    color: white;
+}
+
+#hello {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#name {
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#profession {
+    font-size: 25px;
     text-align: center;
-    border-radius: 10px;
+    color: #000;
 }
 
-#clickBelow {
+#me_pic {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 660px;
+}
+
+#intro_text {
+    font-size: 100%;
+    font-family: Tahoma;
+    line-height: 20px;
+}
+
+#resumeButton {
+    background:black;
+    color: white;
+    padding: 10px;
+    border: solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) ;   
+}
+
+#resumeButton:hover {
+    background-color: rgb(7, 103, 134)
+}
+
+.footer {
+    position: absolute;
+    background-color: black;
+}
+
+#clickBelow { /*this is for profession page*/
     text-align: center;
     font-size: medium;
+    position: relative;
+    margin-top: 60px;
 }
 
-.container {
+.container { /*this is for about me page*/
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5%;
 }
 
-.intro_text {
-    margin: 5px;
-    font-size: 120%;
-}
-
-#bigText1, #bigText2{
-    margin: 20px;
-}
-
-
-.Footer {
-    margin: 0%;
-    padding: 10px;
-    background: rgb(15, 15, 15);
-}
-
 .social-links {
     display: flex;
     padding-top: 1%;
+    position: absolute;
+    left: 48%;
+    transform: translateX(-48%);
+    margin-top: 10px;
 }
 
 .social-links ul{
@@ -82,18 +141,30 @@ h1 {
     padding: 10px;
     text-align: center;
     font-size: 30px;
-    color: lightblue;
+    color: rgb(7, 103, 134);
 }
 
 .copyright p{
     color: white;
     text-align: center;
     padding: 1%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+#careertimeline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+
 .buttonBox { /*this is for actual button element*/
-    background: lightblue;
-    color: black;
+    background-color:rgb(7, 103, 134);
+    color: white;
     padding: 20px;
     border: solid black;
     border-radius: 10px;
@@ -101,7 +172,7 @@ h1 {
 }
 
 .buttonBox:hover {
-    background-color: rgba(37, 116, 112, 0.658);
+    background-color: silver;
 }
 
 .buttons { /*this is for the div element*/

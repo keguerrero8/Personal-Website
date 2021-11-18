@@ -1,7 +1,7 @@
 const button = document.getElementsByClassName("buttonBox");
 const popup = document.getElementsByClassName("popup")
 const closebutton = document.getElementsByClassName("closebutton");
-const overlay = document.getElementById("overlay");
+const overlay = document.getElementById("overlay"); 
 
 for (let i=0; i < button.length; i++) {
     button[i].addEventListener("click", function () { 
@@ -14,6 +14,7 @@ for (let i=0; i < button.length; i++) {
         popup[i].style.display = "none"
     })
 }
+
 
 
 

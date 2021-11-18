@@ -5,54 +5,34 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">     
         <title>Home - Kevin Guerrero</title>
     </head>
-    <body>
-        <div>
+    <body>  
+        <header>
             <ul id="nav_bar">
                 <li class="nav_item"><a href="index.html">Home</a></li> 
-                <li class="nav_item"><a href="about_me.html">About Me</a></li>
+                <!-- <li class="nav_item"><a href="about_me.html">About Me</a></li> -->
                 <li class="nav_item"><a href="professional.html">Professional</a></li>
                 <!--<li class="nav_item"><a href="projects.html">Projects</a></li>-->
             </ul>
+        </header>
+        <div id="text-container">
+            <p id="hello">Hi,</p>
+            <p id="name">I'm <b style="color: rgb(7, 103, 134);">KEVIN</b></p>
+            <p id="profession">Aspiring Software Developer</p>
+            <p id="intro_text">I am currently enrolled in the Flatiron School Software Engineering bootcamp.  I have a strong passion for learning
+                and am very excited in building a life in software development.  I created this personal website as part of my bootcamp pre-work to showcase
+                what I've learned thus far.  The structure and styling of this website is done through HTML and CSS.  In my Professional page, I used  
+                JavaScript to create popups with text based on which box is selected in my career timeline.
+            </p>
+            <button id="resumeButton">View Resume (coming soon)</button>   
         </div>
-        <div id="content">
-            <h1><strong>Welcome to my Personal Website!</strong></h1>
-            <div class="container">
-                <div class=intro_image>
-                    <img id="me_pic" src="pictures/profilepic.jpeg" alt="Pic of me" style="width: 200px;height: 200px;">
-                </div>       
-                <div class="intro_text">
-                    <p id="intro_text">Hello there! My name is Kevin Guerrero. You can call me KG, TrueWarrior92 (gamertag :p), or just Kev.
-                        This is my personal website that I created as part of my pre-work project before the start of my software engineering bootcamp.
-                        To flesh out some of the learnings from the pre-work, I've used what I learned from HTML, CSS, and JavaScript to bring you this website.
-                        The structure and styling of this website is all done through HTML and CSS.  In my Professional page, I used what I learned in JavaScript to
-                        create popups with text based on which box is selected.
-                    </p>
-                </div>      
-            </div>
-            <div id="bigText1" class="container">
-                <div class="intro_text">
-                    <p class="intro_text" style="text-align: center; font-size: 200%;">Feel free to learn more about me by navigating to one of the tabs up top</p>
-                </div>
-                <div class="intro_image">
-                    <img src="https://media4.giphy.com/media/Qs0QQDnYimpz519ej4/200w.gif?cid=82a1493b9bcyl91w5l5mnondx1v75gqx6xe0cxkuq94ur88d&rid=200w.gif&ct=g" alt="up arrow" style="width: 100px;height: 80px;">
-                </div>
-            </div>
-            <p id="or" style="text-align: center; font-size: 200%;">OR</p>
-            <div id="bigText2" class="container">
-                <div class="intro_text">
-                    <p class="intro_text" style="text-align: center; font-size: 200%;">Check out my online presence by selecting one of the icons down below or contacting me <a href="mailto:guerrk83z@gmail.com" style="color: black;">here</a></p>
-                </div>
-                <div class="intro_image">
-                    <img src="https://media4.giphy.com/media/Qs0QQDnYimpz519ej4/200w.gif?cid=82a1493b9bcyl91w5l5mnondx1v75gqx6xe0cxkuq94ur88d&rid=200w.gif&ct=g" alt="down arrow" style="width: 100px;height: 80px;transform: scaleY(-1);">
-                </div>
-            </div>
-        </div>
-        <footer class="Footer">
+        <img id="me_pic" src="pictures/me.jpeg" alt="Pic of Kevin">
+        <footer>
             <div class="social-links">
                 <ul>
                     <li class="social-items"><a href="https://github.com/keguerrero8"><i class="fab fa-github"></i></a></li>
                     <li class="social-items"><a href="https://www.linkedin.com/in/kevin-guerrero-184511b5/"><i class="fab fa-linkedin"></i></a></li>
                     <li class="social-items"><a href="https://twitter.com/Kg83kg1"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-items"><a href="mailto:guerrk83z@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
                 </ul>
             </div>
             <div class="copyright">
